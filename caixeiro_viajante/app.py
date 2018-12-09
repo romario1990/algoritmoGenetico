@@ -50,15 +50,27 @@ if __name__ == '__main__':
     cidade20 = Cidade(160, 20)
     gerenciadorRota.addCidade(cidade20)
 
-    # Inicializa população
-    pop = Populacao(gerenciadorRota, 50, True)
+    # Inicializa classe da população
+    pop = Populacao(gerenciadorRota)
+    # Insere tamanho da população
+    pop.setTamanhoPopulacao(50, True)
+
+
 
     print("Distância inicial: " + str(pop.getMaisApto().getDistancia()))
 
+
     ag = AlgoritmoGenetico(gerenciadorRota)
-    pop = ag.evolvePopulation(pop)
+    # Insere taxa mutação
+    ag.setTaxaMutacao(0.8)
+    # Insere taxa de cruzamento
+    #ag.setTaxaCruzamento(60)
+
+    pop = ag.evolucaoDaPopulacao(pop)
+
     for i in range(0, 200):
-        pop = ag.evolvePopulation(pop)
+        # print(pop.getMaisApto())
+        pop = ag.evolucaoDaPopulacao(pop)
 
 
     print("Finalizado")

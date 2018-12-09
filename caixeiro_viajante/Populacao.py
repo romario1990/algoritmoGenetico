@@ -3,14 +3,17 @@
 from Rota import Rota
 
 class Populacao:
-    def __init__(self, gerenciadorRota, tamanhoPopulacao, inicializar):
+    def __init__(self, gerenciadorRota):
         self.rotas = []
+        self.gerenciadorRota = gerenciadorRota
+
+    def setTamanhoPopulacao(self, tamanhoPopulacao, inicializar):
         for i in range(0, tamanhoPopulacao):
             self.rotas.append(None)
 
         if inicializar:
             for i in range(0, tamanhoPopulacao):
-                novaRota = Rota(gerenciadorRota)
+                novaRota = Rota(self.gerenciadorRota)
                 novaRota.gerarIndividup()
                 self.saveRota(i, novaRota)
 
