@@ -5,6 +5,34 @@ from Cidade import Cidade
 from Populacao import Populacao
 from AlgoritmoGenetico import AlgoritmoGenetico
 
+import matplotlib.pyplot as plt
+
+def mostrarPlanoCartesiano(distancia, nome):
+
+    x = []
+    y = []
+
+    for posicao in distancia:
+        x.append(posicao.getX())
+        y.append(posicao.getY())
+
+    x.append(x[0])
+    y.append(y[0])
+
+
+    plt.figure()
+
+    plt.plot(x, y)
+
+    plt.plot(x, y, 'ro')
+
+    plt.title(nome)
+    plt.xlabel("X")
+    plt.ylabel("Y")
+
+    plt.show()
+
+
 if __name__ == '__main__':
 
     gerenciadorRota = GerenciadorRota()
@@ -64,15 +92,21 @@ if __name__ == '__main__':
     # Insere taxa mutação
     ag.setTaxaMutacao(0.8)
     # Insere taxa de cruzamento
-    #ag.setTaxaCruzamento(60)
+    ag.setTaxaCruzamento(60)
 
     pop = ag.evolucaoDaPopulacao(pop)
 
-    for i in range(0, 200):
-        # print(pop.getMaisApto())
+    mostrarPlanoCartesiano(pop.getMaisApto(), "Plano inicial")
+
+    mostrar = 5
+
+    for i in range(0, 50):
+        if i == mostrar:
+            mostrarPlanoCartesiano(pop.getMaisApto(), "Plano inicial")
+            mostrar = mostrar + 10
         pop = ag.evolucaoDaPopulacao(pop)
 
-
+    mostrarPlanoCartesiano(pop.getMaisApto(), "Plano Final")
     print("Finalizado")
     print("Distância Final: " + str(pop.getMaisApto().getDistancia()))
     print("solução:")
