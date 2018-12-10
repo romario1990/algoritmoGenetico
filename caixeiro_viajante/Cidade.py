@@ -4,9 +4,11 @@ import math
 import random
 
 class Cidade:
-    def __init__(self, eixoX=None, eixoY=None):
+    def __init__(self, nome=None, eixoX=None, eixoY=None):
+        self.nome = nome
         self.eixoX = None
         self.eixoY = None
+
         if eixoX is not None:
             self.eixoX = eixoX
         else:
@@ -15,6 +17,9 @@ class Cidade:
             self.eixoY = eixoY
         else:
             self.eixoY = int(random.random() * 200)
+
+    def getNome(self):
+        return self.nome
 
     def getX(self):
         return self.eixoX

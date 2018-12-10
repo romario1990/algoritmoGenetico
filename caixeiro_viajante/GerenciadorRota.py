@@ -11,3 +11,6 @@ class GerenciadorRota:
 
     def numeroDeCidades(self):
         return len(self.cidadesDestino)
+
+    def removerCidade(self, indice):
+        self.cidadesDestino.remove(indice)

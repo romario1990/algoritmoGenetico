@@ -2,6 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f52ab5bf-3278-46bb-a4fc-3b6f7be768ef" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Tela.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cidade.py" beforeDir="false" afterPath="$PROJECT_DIR$/Cidade.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GerenciadorRota.py" beforeDir="false" afterPath="$PROJECT_DIR$/GerenciadorRota.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -12,7 +16,8 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/caixeiro_viajante$teste.coverage" NAME="teste Coverage Results" MODIFIED="1544367043880" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/caixeiro_viajante$app.coverage" NAME="app Coverage Results" MODIFIED="1544399300078" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/caixeiro_viajante$Tela.coverage" NAME="Tela Coverage Results" MODIFIED="1544408491288" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/caixeiro_viajante$app.coverage" NAME="app Coverage Results" MODIFIED="1544409035693" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="FUSProjectUsageTrigger">
     <session id="1376525105">
@@ -24,24 +29,24 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="py" value="16" />
+          <entry key="py" value="17" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="ActionScript" value="1" />
-          <entry key="Python" value="15" />
+          <entry key="Python" value="16" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="2825" />
+          <entry key="py" value="3923" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="ActionScript" value="3" />
-          <entry key="Python" value="2822" />
+          <entry key="Python" value="3920" />
         </counts>
       </usages-collector>
     </session>
@@ -51,8 +56,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/AlgoritmoGenetico.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-300">
-              <caret line="13" column="39" selection-start-line="13" selection-start-column="39" selection-end-line="13" selection-end-column="39" />
+            <state relative-caret-position="150">
+              <caret line="16" column="11" selection-start-line="16" selection-start-column="11" selection-end-line="16" selection-end-column="31" />
               <folding>
                 <element signature="e#23#54#0" expanded="true" />
                 <marker date="1544391524444" expanded="true" signature="519:613" ph="..." />
@@ -66,10 +71,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Cidade.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="18" column="12" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="12" />
+            <state relative-caret-position="216">
+              <caret line="21" column="24" selection-start-line="21" selection-start-column="24" selection-end-line="21" selection-end-column="24" />
               <folding>
                 <element signature="e#23#34#0" expanded="true" />
+                <marker date="1544407501233" expanded="true" signature="478:509" ph="..." />
               </folding>
             </state>
           </provider>
@@ -78,8 +84,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/GerenciadorRota.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="21" selection-end-column="21" />
+            <state relative-caret-position="225">
+              <caret line="15" column="41" selection-start-line="15" selection-start-column="41" selection-end-line="15" selection-end-column="41" />
             </state>
           </provider>
         </entry>
@@ -111,11 +117,23 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1">
-              <caret line="95" lean-forward="true" selection-start-line="95" selection-end-line="95" />
+            <state relative-caret-position="60">
+              <caret line="32" column="4" lean-forward="true" selection-start-line="32" selection-start-column="4" selection-end-line="73" selection-end-column="39" />
               <folding>
                 <element signature="e#23#66#0" expanded="true" />
-                <marker date="1544399268856" expanded="true" signature="251:555" ph="..." />
+                <marker date="1544407091170" expanded="true" signature="250:550" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Tela.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-241">
+              <caret line="164" lean-forward="true" selection-start-line="164" selection-end-line="164" />
+              <folding>
+                <element signature="e#36#52#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -144,6 +162,13 @@
       <find>tournament</find>
       <find>getFittest</find>
       <find>#!/usr/bin/env python</find>
+      <find>RemoverVertice</find>
+      <find>RemoverAresta</find>
+      <find>VerificarVerticeEhAdjacentes</find>
+      <find>RetornaElementoArmazenadoAresta</find>
+      <find>inserirvertice</find>
+      <find>removervertice</find>
+      <find>inseriraresta</find>
       <find>Populacao(</find>
       <find>mutate</find>
       <find>evolvePopulation</find>
@@ -158,6 +183,15 @@
       <replace>Cidade</replace>
       <replace>tamanhoRota</replace>
       <replace>novaPopulacao</replace>
+      <replace>InserirCidade</replace>
+      <replace>RemoverCidade</replace>
+      <replace>TamanhoPopulacao</replace>
+      <replace>TaxaMutacao</replace>
+      <replace>TaxaCruzamento</replace>
+      <replace>NumeroGeracoes</replace>
+      <replace>inserircidade</replace>
+      <replace>carregarinformacoes</replace>
+      <replace>removercidade</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -167,13 +201,14 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/teste.py" />
-        <option value="$PROJECT_DIR$/GerenciadorRota.py" />
-        <option value="$PROJECT_DIR$/Cidade.py" />
         <option value="$PROJECT_DIR$/main.py" />
         <option value="$PROJECT_DIR$/Populacao.py" />
         <option value="$PROJECT_DIR$/Rota.py" />
         <option value="$PROJECT_DIR$/AlgoritmoGenetico.py" />
         <option value="$PROJECT_DIR$/app.py" />
+        <option value="$PROJECT_DIR$/Cidade.py" />
+        <option value="$PROJECT_DIR$/GerenciadorRota.py" />
+        <option value="$PROJECT_DIR$/Tela.py" />
       </list>
     </option>
   </component>
@@ -210,6 +245,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../graph2/grafo" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
@@ -227,6 +263,28 @@
     </option>
   </component>
   <component name="RunManager" selected="Python.app">
+    <configuration name="Tela" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="caixeiro_viajante" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Tela.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="app" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="caixeiro_viajante" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -274,10 +332,12 @@
     <list>
       <item itemvalue="Python.teste" />
       <item itemvalue="Python.app" />
+      <item itemvalue="Python.Tela" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Python.app" />
+        <item itemvalue="Python.Tela" />
         <item itemvalue="Python.teste" />
       </list>
     </recent_temporary>
@@ -297,10 +357,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1299" height="743" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" weight="0.23712121" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23703113" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
@@ -311,7 +370,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32952693" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.3982684" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3980424" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -343,6 +402,11 @@
           <line>57</line>
           <option name="timeStamp" value="10" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Tela.py</url>
+          <line>98</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
@@ -371,32 +435,43 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/GerenciadorRota.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="21" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AlgoritmoGenetico.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-300">
-          <caret line="13" column="39" selection-start-line="13" selection-start-column="39" selection-end-line="13" selection-end-column="39" />
-          <folding>
-            <element signature="e#23#54#0" expanded="true" />
-            <marker date="1544391524444" expanded="true" signature="519:613" ph="..." />
-            <marker date="1544391524444" expanded="true" signature="651:860" ph="..." />
-            <marker date="1544391524444" expanded="true" signature="962:1182" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Populacao.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="9" column="63" selection-start-line="9" selection-start-column="52" selection-end-line="9" selection-end-column="63" />
           <folding>
             <marker date="1544387078011" expanded="true" signature="241:541" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Cidade.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="21" column="24" selection-start-line="21" selection-start-column="24" selection-end-line="21" selection-end-column="24" />
+          <folding>
+            <element signature="e#23#34#0" expanded="true" />
+            <marker date="1544407501233" expanded="true" signature="478:509" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GerenciadorRota.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="41" selection-start-line="15" selection-start-column="41" selection-end-line="15" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AlgoritmoGenetico.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="16" column="11" selection-start-line="16" selection-start-column="11" selection-end-line="16" selection-end-column="31" />
+          <folding>
+            <element signature="e#23#54#0" expanded="true" />
+            <marker date="1544391524444" expanded="true" signature="519:613" ph="..." />
+            <marker date="1544391524444" expanded="true" signature="651:860" ph="..." />
+            <marker date="1544391524444" expanded="true" signature="962:1182" ph="..." />
           </folding>
         </state>
       </provider>
@@ -411,23 +486,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Cidade.py">
+    <entry file="file://$PROJECT_DIR$/Tela.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="12" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="12" />
+        <state relative-caret-position="-241">
+          <caret line="164" lean-forward="true" selection-start-line="164" selection-end-line="164" />
           <folding>
-            <element signature="e#23#34#0" expanded="true" />
+            <element signature="e#36#52#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1">
-          <caret line="95" lean-forward="true" selection-start-line="95" selection-end-line="95" />
+        <state relative-caret-position="60">
+          <caret line="32" column="4" lean-forward="true" selection-start-line="32" selection-start-column="4" selection-end-line="73" selection-end-column="39" />
           <folding>
             <element signature="e#23#66#0" expanded="true" />
-            <marker date="1544399268856" expanded="true" signature="251:555" ph="..." />
+            <marker date="1544407091170" expanded="true" signature="250:550" ph="..." />
           </folding>
         </state>
       </provider>

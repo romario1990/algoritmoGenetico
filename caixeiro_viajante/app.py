@@ -4,7 +4,6 @@ from GerenciadorRota import GerenciadorRota
 from Cidade import Cidade
 from Populacao import Populacao
 from AlgoritmoGenetico import AlgoritmoGenetico
-
 import matplotlib.pyplot as plt
 
 def mostrarPlanoCartesiano(distancia, nome):
@@ -19,13 +18,9 @@ def mostrarPlanoCartesiano(distancia, nome):
     x.append(x[0])
     y.append(y[0])
 
-
     plt.figure()
-
     plt.plot(x, y)
-
-    plt.plot(x, y, 'ro')
-
+    plt.plot(x, y, 'ks')
     plt.title(nome)
     plt.xlabel("X")
     plt.ylabel("Y")
@@ -37,45 +32,45 @@ if __name__ == '__main__':
 
     gerenciadorRota = GerenciadorRota()
 
-    cidade = Cidade(60, 200)
+    cidade = Cidade("A", 60, 200)
     gerenciadorRota.addCidade(cidade)
-    cidade2 = Cidade(180, 200)
+    cidade2 = Cidade("B", 180, 200)
     gerenciadorRota.addCidade(cidade2)
-    cidade3 = Cidade(80, 180)
+    cidade3 = Cidade("C", 80, 180)
     gerenciadorRota.addCidade(cidade3)
-    cidade4 = Cidade(140, 180)
+    cidade4 = Cidade("D", 140, 180)
     gerenciadorRota.addCidade(cidade4)
-    cidade5 = Cidade(20, 160)
+    cidade5 = Cidade("F", 20, 160)
     gerenciadorRota.addCidade(cidade5)
-    cidade6 = Cidade(100, 160)
+    cidade6 = Cidade("G", 100, 160)
     gerenciadorRota.addCidade(cidade6)
-    cidade7 = Cidade(200, 160)
+    cidade7 = Cidade("H", 200, 160)
     gerenciadorRota.addCidade(cidade7)
-    cidade8 = Cidade(140, 140)
+    cidade8 = Cidade("I", 140, 140)
     gerenciadorRota.addCidade(cidade8)
-    cidade9 = Cidade(40, 120)
+    cidade9 = Cidade("J", 40, 120)
     gerenciadorRota.addCidade(cidade9)
-    cidade10 = Cidade(100, 120)
+    cidade10 = Cidade("K", 100, 120)
     gerenciadorRota.addCidade(cidade10)
-    cidade11 = Cidade(180, 100)
+    cidade11 = Cidade("L", 180, 100)
     gerenciadorRota.addCidade(cidade11)
-    cidade12 = Cidade(60, 80)
+    cidade12 = Cidade("M", 60, 80)
     gerenciadorRota.addCidade(cidade12)
-    cidade13 = Cidade(120, 80)
+    cidade13 = Cidade("N", 120, 80)
     gerenciadorRota.addCidade(cidade13)
-    cidade14 = Cidade(180, 60)
+    cidade14 = Cidade("O", 180, 60)
     gerenciadorRota.addCidade(cidade14)
-    cidade15 = Cidade(20, 40)
+    cidade15 = Cidade("P", 20, 40)
     gerenciadorRota.addCidade(cidade15)
-    cidade16 = Cidade(100, 40)
+    cidade16 = Cidade("Q", 100, 40)
     gerenciadorRota.addCidade(cidade16)
-    cidade17 = Cidade(200, 40)
+    cidade17 = Cidade("R", 200, 40)
     gerenciadorRota.addCidade(cidade17)
-    cidade18 = Cidade(20, 20)
+    cidade18 = Cidade("S", 20, 20)
     gerenciadorRota.addCidade(cidade18)
-    cidade19 = Cidade(60, 20)
+    cidade19 = Cidade("T", 60, 20)
     gerenciadorRota.addCidade(cidade19)
-    cidade20 = Cidade(160, 20)
+    cidade20 = Cidade("U", 160, 20)
     gerenciadorRota.addCidade(cidade20)
 
     # Inicializa classe da população
@@ -94,12 +89,12 @@ if __name__ == '__main__':
     # Insere taxa de cruzamento
     ag.setTaxaCruzamento(60)
 
+
     pop = ag.evolucaoDaPopulacao(pop)
 
     mostrarPlanoCartesiano(pop.getMaisApto(), "Plano inicial")
 
     mostrar = 5
-
     for i in range(0, 50):
         if i == mostrar:
             mostrarPlanoCartesiano(pop.getMaisApto(), "Plano inicial")
