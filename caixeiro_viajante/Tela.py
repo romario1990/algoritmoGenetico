@@ -93,6 +93,7 @@ class InserirCidade(t.Frame):
         return self._tela
 
     def salvarVertice(self):
+        global gerenciadorRota
         nome = self.cidade.get()
         x = int(self.eixoX.get())
         y = int(self.eixoY.get())
@@ -270,6 +271,65 @@ class ExecutarAlgoritmo(t.Frame):
         print("solução:")
         print(pop.getMaisApto())
 
+
+class InicializarMapa(t.Frame):
+    def __init__(self, parent):
+        t.Frame.__init__(self, parent)
+
+        ### Widgets - Principal ###
+        t.Label(self, text="Inicializar Mapa").pack()
+        self._tela = "inicializarmapa"
+
+        t.Button(self, text='inicializar', command=self.salvarVertice).pack()
+
+    def getTela(self):
+        return self._tela
+
+    def salvarVertice(self):
+        global gerenciadorRota
+        gerenciadorRota = None
+        gerenciadorRota = GerenciadorRota()
+
+        cidade1 = Cidade("A", 60, 200)
+        gerenciadorRota.addCidade(cidade1)
+        cidade2 = Cidade("B", 180, 200)
+        gerenciadorRota.addCidade(cidade2)
+        cidade3 = Cidade("C", 80, 180)
+        gerenciadorRota.addCidade(cidade3)
+        cidade4 = Cidade("D", 140, 180)
+        gerenciadorRota.addCidade(cidade4)
+        cidade5 = Cidade("E", 20, 160)
+        gerenciadorRota.addCidade(cidade5)
+        cidade6 = Cidade("F", 100, 160)
+        gerenciadorRota.addCidade(cidade6)
+        cidade7 = Cidade("G", 200, 160)
+        gerenciadorRota.addCidade(cidade7)
+        cidade8 = Cidade("H", 140, 140)
+        gerenciadorRota.addCidade(cidade8)
+        cidade9 = Cidade("I", 40, 120)
+        gerenciadorRota.addCidade(cidade9)
+        cidade10 = Cidade("J", 100, 120)
+        gerenciadorRota.addCidade(cidade10)
+        cidade11 = Cidade("K", 180, 100)
+        gerenciadorRota.addCidade(cidade11)
+        cidade12 = Cidade("L", 60, 80)
+        gerenciadorRota.addCidade(cidade12)
+        cidade13 = Cidade("M", 120, 80)
+        gerenciadorRota.addCidade(cidade13)
+        cidade14 = Cidade("N", 180, 60)
+        gerenciadorRota.addCidade(cidade14)
+        cidade15 = Cidade("O", 20, 40)
+        gerenciadorRota.addCidade(cidade15)
+        cidade16 = Cidade("P", 100, 40)
+        gerenciadorRota.addCidade(cidade16)
+        cidade17 = Cidade("Q", 200, 40)
+        gerenciadorRota.addCidade(cidade17)
+        cidade18 = Cidade("R", 20, 20)
+        gerenciadorRota.addCidade(cidade18)
+        cidade19 = Cidade("S", 60, 20)
+        gerenciadorRota.addCidade(cidade19)
+        cidade20 = Cidade("T", 160, 20)
+        gerenciadorRota.addCidade(cidade20)
     
 class Menu(t.Frame):
     def __init__(self, parent, *subtelas):
@@ -296,11 +356,15 @@ class Menu(t.Frame):
                 self._telaCarregarInformacoes = subtela
             elif subtela.getTela() == "executar":
                 self._telaExecutarAlgoritmo = subtela
+            elif subtela.getTela() == "inicializarmapa":
+                self._telaInicializarMapa = subtela
+
 
         t.Button(self, text="Inserir Cidade", command=functools.partial(self.muda_tela, self._telaInserirCidade)).pack()
         t.Button(self, text="Remover Cidade", command=functools.partial(self.muda_tela, self._telaRemoverCidade)).pack()
         t.Button(self, text="Carregar Informações", command=functools.partial(self.muda_tela, self._telaCarregarInformacoes)).pack()
         t.Button(self, text="Executar", command=functools.partial(self.muda_tela, self._telaExecutarAlgoritmo)).pack()
+        t.Button(self, text="Inicializar Mapa", command=functools.partial(self.muda_tela, self._telaInicializarMapa)).pack()
 
     def muda_tela(self, qual):
         self.current_frame.pack_forget()
@@ -314,9 +378,10 @@ if __name__ == '__main__':
     removerCidade = RemoverCidade(root)
     carregarInformacoes = CarregarInformacoes(root)
     executarAlgoritmo = ExecutarAlgoritmo(root)
+    inicializarMapa = InicializarMapa(root)
 
     menuPrincipal = Menu(root, telaPrincipal, inserirCidade, removerCidade, carregarInformacoes,
-                         executarAlgoritmo)
+                         executarAlgoritmo, inicializarMapa)
 
     root.geometry("1024x700+0+0")
     menuPrincipal.pack()
